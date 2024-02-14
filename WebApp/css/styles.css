@@ -1,0 +1,61 @@
+body {
+    background: #1d1d1d;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 56px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #fff;
+    position: relative;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.5), 0 0 8px rgba(0, 0, 0, 0.8); /* Adăugăm umbra și conturul negru */
+    display: inline-block; /* Aliniem umbra corect */
+}
+
+#colorBar {
+    width: 80%;
+    height: 20px;
+    background: linear-gradient(to right, red, yellow, lime, aqua, blue, magenta, red);
+    border: 1px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+/* Adăugăm stiluri pentru textul mobil */
+@media screen and (max-width: 768px) {
+    .ambient-light-text {
+        font-size: 24px; /* Diminuăm dimensiunea textului pentru ecranele mai mici */
+        text-align: center; /* Aducem textul la centru pe ecranele mai mici */
+        margin: 0; /* Eliminăm marginile pentru o prezență compactă */
+    }
+}
+
+#innerBar {
+    height: 100%;
+    border-radius: 5px;
+    pointer-events: none;
+}
+#toggleButton {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#toggleButton:hover {
+    background-color: #2980b9;
+}
